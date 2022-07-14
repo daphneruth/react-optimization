@@ -7,16 +7,23 @@ import './App.css';
 function App() {
   console.log('App Running')
   const[showPara,setShowPara] = useState(false)
+  const[allowToggle,setAllowToggle] = useState(false)
+
 
   const toggleParaHandler = useCallback(() => {
     //changing state
     setShowPara(prevShowPara => ! prevShowPara)
   }, []);
+
+  const allowToggleHandler = () =>{
+setAllowToggle(true);
+  }
   return (
     <div className="app">
       <h1>Hi there!</h1>
      <DemoOutput show ={false}/>
-     <Button onClick ={toggleParaHandler}>Toggle Paragrap</Button>
+     <Button onClick ={setAllowToggle}>allowToggle Paragraph</Button>
+     <Button onClick ={toggleParaHandler}>Toggle Paragraph</Button>
     </div>
   );
 }
