@@ -24,7 +24,7 @@ setAllowToggle(true);
     <div className="app">
       <h1>Hi there!</h1>
      <DemoOutput show ={false}/>
-     <Button onClick ={setAllowToggle}>allowToggle Paragraph</Button>
+     <Button onClick ={allowToggleHandler}>allowToggle Paragraph</Button>
      <Button onClick ={toggleParaHandler}>Toggle Paragraph</Button>
     </div>
   );
