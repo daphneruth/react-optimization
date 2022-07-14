@@ -15,7 +15,7 @@ function App() {
 //changing state
 setShowPara(prevShowPara => ! prevShowPara)
     }
-    }, []);
+    }, [allowToggle]);
 
   const allowToggleHandler = () =>{
 setAllowToggle(true);
@@ -24,7 +24,7 @@ setAllowToggle(true);
     <div className="app">
       <h1>Hi there!</h1>
      <DemoOutput show ={false}/>
-     <Button onClick ={allowToggleHandler}>allowToggle Paragraph</Button>
+     <Button onClick ={allowToggleHandler}>allow Toggle</Button>
      <Button onClick ={toggleParaHandler}>Toggle Paragraph</Button>
     </div>
   );
