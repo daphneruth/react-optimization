@@ -11,9 +11,11 @@ function App() {
 
 
   const toggleParaHandler = useCallback(() => {
-    //changing state
-    setShowPara(prevShowPara => ! prevShowPara)
-  }, []);
+    if(allowToggle){
+//changing state
+setShowPara(prevShowPara => ! prevShowPara)
+    }
+    }, []);
 
   const allowToggleHandler = () =>{
 setAllowToggle(true);
