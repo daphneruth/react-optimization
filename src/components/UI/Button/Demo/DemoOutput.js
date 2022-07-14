@@ -7,4 +7,4 @@ const DemoOutput = (props)=>{
     <MyParagraph >{props.show ? 'react behind scenes':''}</MyParagraph>
 }
 
-export default DemoOutput;
+export default React.memo(DemoOutput);
