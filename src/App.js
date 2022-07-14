@@ -5,6 +5,7 @@ import DemoOutput from './components/UI/Button/Demo/DemoOutput';
 import './App.css';
 
 function App() {
+  console.log('App Running')
   const[showPara,setShowPara] = useState(false)
 
   const toggleParaHandler = () => {
