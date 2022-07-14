@@ -1,5 +1,5 @@
 import React from "react";
-import MyParagraph from './components/Demo/MyParagraph';
+import MyParagraph from './components/UI/Button/Demo/MyParagraph';
 
 const DemoOutput = (props)=>{
     console.log('DemoOtput Running')
